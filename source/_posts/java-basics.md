@@ -6,7 +6,7 @@ categories:
 tags: 
 ---
 
-# 1 Creating variables and naming them
+# 1 Creating Variables and Naming Them
 
 ## 1.1 Variables
 
@@ -80,4 +80,26 @@ Local variables are slightly different; the compiler never assigns a default val
 If a local variable is not initialized where it is declared, we need to make sure to assign it a value before we attempt to use it. Accessing an uninitialized local variable will result in a compile-time error.
 
 ## 2.3 Creating Values with Literals
+
+&emsp;&emsp;Primitive types are special data types **built into the language**; they are not objects created from a class. 
+
+A literal is the **source code representation of a fixed value**; literals are represented directly in our code without requiring computation. 
+
+As shown below, it is possible to assign a literal to a variable of a primitive type:
+
+```java
+boolean result = true;
+char capitalC = 'C';
+byte b = 100;
+short s = 10000;
+int i = 100000;
+```
+
+### 2.3.1 Integer Literals
+
+An integer literal is of type long if it ends with the letter L or l; otherwise it is of type int.
+
+### 2.3.2 Floating-Point Literals
+
+### 2.3.3 Character and String Literals
 
