@@ -81,4 +81,3 @@ If a local variable is not initialized where it is declared, we need to make sur
 
 ## 2.3 Creating Values with Literals
 
-
