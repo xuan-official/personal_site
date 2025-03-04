@@ -97,7 +97,36 @@ int i = 100000;
 
 ### 2.3.1 Integer Literals
 
-An integer literal is of type long if it ends with the letter L or l; otherwise it is of type int.
+An integer literal is of type `long` if it ends with the letter `L` or `l`; otherwise it is of type `int`.
+
+Values of the integral types `byte`, `short`, `int`, and `long` can be created from `int` literals. Values of type `long` that exceed the range of `int` can be created from `long` literals.
+
+```java
+byte b = 100;
+short s = 100;
+int i = 100;
+long l = 100;
+
+long i1 = 12345678901;  //error
+long l2 = 12345678901L;  //pass
+```
+
+Integer literals can be expressed by these number systems:
+
+1. Decimal
+2. Hexadecimal
+3. Binary
+
+```java
+// The number 26, in decimal
+int decimalValue = 26;
+
+//  The number 26, in hexadecimal
+int hexadecimalValue = 0x1a;
+
+// The number 26, in binary
+int binaryValue = 0b11010;
+```
 
 ### 2.3.2 Floating-Point Literals
 
