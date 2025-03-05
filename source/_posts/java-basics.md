@@ -130,5 +130,18 @@ int binaryValue = 0b11010;
 
 ### 2.3.2 Floating-Point Literals
 
+A floating-point literal is of type `float` if it ends with the letter `F` or `f`; otherwise its type is `double` and it can *optionally* end with the letter `D` or `d`.
+
+The floating point types (float and double) can also be expressed using E or e (for scientific notation), F or f (32-bit float literal) and D or d (64-bit double literal; this is the default and by convention is omitted).
+
+```java
+double d1 = 123.4;
+
+// same value as d1, but in scientific notation
+double d2 = 1.234e2;
+float f1  = 123.4f;
+```
+
 ### 2.3.3 Character and String Literals
+
 
