@@ -102,11 +102,7 @@ An integer literal is of type `long` if it ends with the letter `L` or `l`; othe
 Values of the integral types `byte`, `short`, `int`, and `long` can be created from `int` literals. Values of type `long` that exceed the range of `int` can be created from `long` literals.
 
 ```java
-byte b = 100;
-short s = 100;
-int i = 100;
 long l = 100;
-
 long i1 = 12345678901;  //error
 long l2 = 12345678901L;  //pass
 ```
@@ -132,7 +128,12 @@ int binaryValue = 0b11010;
 
 A floating-point literal is of type `float` if it ends with the letter `F` or `f`; otherwise its type is `double` and it can *optionally* end with the letter `D` or `d`.
 
-The floating point types (float and double) can also be expressed using E or e (for scientific notation), F or f (32-bit float literal) and D or d (64-bit double literal; this is the default and by convention is omitted).
+```java
+float f = 1.23456789; //error
+float f = 1.23456789F; //pass
+```
+
+The floating point types (`float` and `double`) can also be expressed using `E` or `e` (for scientific notation), `F` or `f` (32-bit `float` literal) and `D` or `d` (64-bit `double` literal; this is the default and by convention is omitted).
 
 ```java
 double d1 = 123.4;
@@ -143,5 +144,3 @@ float f1  = 123.4f;
 ```
 
 ### 2.3.3 Character and String Literals
-
-
